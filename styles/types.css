@@ -1,0 +1,54 @@
+.normal {
+    @apply bg-[#A8A878];
+}
+.fire {
+    @apply bg-[#F08030];
+}
+.water {
+    @apply bg-[#6890F0];
+}
+.electric {
+    @apply bg-[#F8D030];
+}
+.grass {
+    @apply bg-[#78C850];
+}
+.ice {
+    @apply bg-[#98D8D8];
+}
+.fighting {
+    @apply bg-[#C03028];
+}
+.poison {
+    @apply bg-[#A040A0];
+}
+.ground {
+    @apply bg-[#E0C068];
+}
+.flying {
+    @apply bg-[#A890F0];
+}
+.psychic {
+    @apply bg-[#F85888];
+}
+.bug {
+    @apply bg-[#A8B820];
+}
+.rock {
+    @apply bg-[#B8A038];
+}
+.ghost {
+    @apply bg-[#705898];
+}
+.dragon {
+    @apply bg-[#7038F8];
+}
+.dark {
+    @apply bg-[#705848];
+}
+.steel {
+    @apply bg-[#B8B8D0];
+}
+.fairy {
+    @apply bg-[#EE99AC];
+}
