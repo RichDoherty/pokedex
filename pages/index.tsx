@@ -1,6 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import Link from 'next/link'
 
 import { Pokemon } from '../interfaces'
 import PokemonCard from '../components/PokemonCard'
@@ -15,9 +13,9 @@ export default function Home({ pokemon }: any) {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <main className='w-3/5 py-10 mx-auto'>
-        <h1 className='mb-10 text-7xl'>Pokédex</h1>
-        <div className='grid grid-cols-3 gap-4'>
+      <main className='w-10/12 py-10 mx-auto lg:w-3/5'>
+        <h1 className='mb-10 text-5xl md:text-7xl'>Pokédex</h1>
+        <div className='grid grid-cols-2 gap-4 sm:grid-cols-3'>
           {results.map((entry: Pokemon, index: number) => (
             <PokemonCard entry={entry} index={index} key={index} />
           ))}

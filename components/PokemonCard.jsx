@@ -14,29 +14,23 @@ export default function PokemonCard(props) {
         
         try {
           const value = await type;
-          //console.log(value);
           document.querySelector('#'+imgId).classList.add(value);
           return value;
         } catch (err) {
           console.log(err);
         }
     }
-    /*
-    if (typeof document !== "undefined") {
-        fetchPokemon(props);
-    }
-    */
+
     useEffect(() => {
       fetchPokemon(props);
     })
-    
 
     return (
         <div className='pt-5 pb-10 border-2 rounded-md bg-slate-800 border-slate-900' key={props.index}>
         <Link href={"pokemon/" + props.entry.name}>
-          <div className='flex px-10 pb-6'>
-            <h2 className='flex text-2xl no-underline capitalize grow'>{props.entry.name}</h2>
-            <p className='flex justify-end text-xl'>#{props.index+1}</p>
+          <div className='px-5 pb-6 sm:px-10 xl:flex'>
+            <h2 className='flex text-xl no-underline capitalize sm:text-2xl grow'>{props.entry.name}</h2>
+            <p className='justify-end text-xl xl:flex'>#{props.index+1}</p>
           </div>
           <Image
             id={imgId}

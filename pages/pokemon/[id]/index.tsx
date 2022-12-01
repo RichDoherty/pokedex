@@ -4,8 +4,8 @@ import { Pokemon } from '../../../interfaces'
 
 export default function pokemon({ pokemon }: any) {
     return (
-        <main className="w-1/3 p-10 mx-auto">
-        <h1 className="text-center capitalize text-7xl">{pokemon.name}</h1>
+        <main className="w-11/12 p-10 mx-auto xl:w-1/3">
+        <h1 className="text-4xl text-center capitalize lg:text-7xl">{pokemon.name}</h1>
 
         <div>
           <Image
@@ -15,7 +15,7 @@ export default function pokemon({ pokemon }: any) {
             width="200"
             height="200"
           />
-          <div className="grid grid-cols-2 grid-rows-2 mx-auto text-xl">
+          <div className="grid grid-cols-2 grid-rows-2 gap-4 mx-auto text-md sm:text-xl">
             <p className="grid justify-center">Height: {pokemon.height / 10} m</p>
             <p className="grid justify-center">Weight: {pokemon.weight / 10} kg</p>
             {pokemon.types.map((slot: any, index: number) => (
